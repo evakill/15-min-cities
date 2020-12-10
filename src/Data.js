@@ -13,6 +13,7 @@ export default function Data ({ name, _amenities, _modes }) {
     useEffect(() => {
         if (!data) return
         const r = []
+
         let numGroceries = 0
         let groceryColor
         amenities.forEach(place => {
@@ -32,13 +33,21 @@ export default function Data ({ name, _amenities, _modes }) {
             })
         })
         r.unshift({ label: 'groceries', fields: ['supermarket', 'farmers_markets'], number: numGroceries, color: groceryColor })
+
+        let totalStr = 'total'
+        if (_modes.length === 0 || _modes.length === 3) {
+            totalStr = 'total_amen'
+        } else {
+            _modes.forEach(m => totalStr += ('_' + m))
+        }
+        r.unshift({ label: 'total', fields: ['total'], number: data[totalStr], color: '#aaa' })
+
         setResults(r)
     }, [data, _modes])
 
     return (
         <div className="data-container">
             {results.map(r => {
-                console.log(_amenities)
                 const numStyle = { backgroundColor: r.color }
                 const textStyle = {}
                 if (_amenities.length && !_amenities.includes(r.fields[0])) {
