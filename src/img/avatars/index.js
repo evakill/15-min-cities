@@ -1,0 +1,8 @@
+export {default as BW} from './BW.PNG'
+export {default as JH} from './JH.PNG'
+export {default as MJ} from './MJ.PNG'
+export {default as MY} from './MY.PNG'
+export {default as VK} from './VK.PNG'
+export {default as ZR} from './ZR.PNG'
+export {default as EK} from './EK.png'
+export {default as AT} from './AT.jpeg'

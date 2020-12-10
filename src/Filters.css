@@ -1,0 +1,43 @@
+.panel {
+    height: 700px;
+    margin-right: -5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.panel-heading {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.panel-body {
+    padding: 5px 15px;
+}
+
+.panel-label {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.panel-block {
+    text-transform: capitalize;
+}
+
+.panel-button {
+    width: 100%;
+    margin: 15px 0px;
+}
+
+.label-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.color-icon {
+    height: 12px;
+    min-width: 12px !important;
+    border-radius: 12px;
+}

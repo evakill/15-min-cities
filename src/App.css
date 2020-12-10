@@ -1,0 +1,104 @@
+.app {
+    padding: 5% 8%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.title {
+    font-size: 48px;
+    margin: 10px auto 10px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin: 10px auto;
+    color: gray;
+}
+
+.intro-text {
+    font-size: 18px;
+    margin-bottom: 50px;
+    padding: 15px;
+    font-family: 'Noto Serif', serif;
+}
+
+.intro-header {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.person-container {
+    margin: 100px 0px;
+}
+
+.interview-section {
+    display: flex;
+    align-items: flex-start;
+}
+
+.interview-text {
+    font-size: 16px;
+    margin: 30px;
+    text-align: justify;
+    font-family: 'Noto Serif', serif;
+}
+
+.person-header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 20px 15px;
+}
+
+.name {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.neighborhood {
+    display: flex;
+    font-size: 26px;
+    line-height: 26px;
+    color: #aaa;
+    align-items: baseline;
+}
+
+.pin {
+    height: 30px;
+    width: auto;
+    margin-left: 5px;
+}
+
+.avatar {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    margin: 0px 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100vw;
+    background-color: #f2f2f2;
+    padding: 0px;
+    font-size: 14px;
+    flex-direction: column;
+}
+
+.footer-avatar {
+    height: 50px;
+    width: 50px;
+}
