@@ -1,7 +1,10 @@
-.map-section {
-    display: flex;
+.map {
     width: 100%;
     margin: auto;
+}
+
+.map-section {
+    display: flex;
     margin: 20px;
 }
 

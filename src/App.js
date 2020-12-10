@@ -3,7 +3,6 @@ import Map from './Map'
 import './App.css'
 import { BW, JH, MJ, MY, VK, ZR, AT, EK } from'./img/avatars'
 import { AT_text, BW_text, VK_text, JH_text, MY_text, MJ_text, ZR_text } from'./text'
-import { useState } from 'react'
 import pin from './img/pin.svg'
 
 function App() {
@@ -101,7 +100,6 @@ function App() {
                 </p>
                 { maps.map(m => (
                     <div key={m.name} className="person-container">
-
                         <div className="interview-section">
                             <img src={m.avatar} className="avatar"/>
                             <div>
@@ -115,9 +113,7 @@ function App() {
                                 {m.text}
                             </div>
                         </div>
-                        <div className="map-section">
-                            <Map {...m} />
-                        </div>
+                        <Map {...m} />
                     </div>
                 ))}
             </div>

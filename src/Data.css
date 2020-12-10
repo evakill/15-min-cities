@@ -1,0 +1,36 @@
+.data-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.data-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.data-number {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    padding: auto;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data-text {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+    max-width: 90px;
+    text-align: center;
+}

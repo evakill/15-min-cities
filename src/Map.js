@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react'
 import Filters from './Filters'
+import Data from './Data'
 import mapboxgl from 'mapbox-gl'
 import './Map.css'
 
@@ -18,8 +19,6 @@ const Map = ({ name, zoomLat, zoomLng }) => {
     const [amenities, setAmenities] = useState([])
     const [modes, setModes] = useState([])
 
-    const all_amenities = ['supermarket', 'farmers_markets', 'restaurant', 'schools', 'medical', 'recreation & greenspace', 'retail', 'entertainment & culture']
-    const all_modes = ['transit', 'pedestrian', 'bicycle']
     const layers = ['JH', 'JH-text', 'VK', 'VK-text', 'ZR', 'ZR-text', 'BW', 'BW-text', 'MY', 'MY-text', 'MJ', 'MJ-text', 'AT', 'AT-text']
 
     // Initialize map when component mounts
@@ -98,9 +97,12 @@ const Map = ({ name, zoomLat, zoomLng }) => {
 
 
     return (
-        <div className="map-section">
-            { map && <Filters filterAmenities={filterAmenities} filterModes={filterModes}/>}
-            <div className='map-container' ref={mapContainerRef} />
+        <div className="map">
+            <div className="map-section">
+                { map && <Filters filterAmenities={filterAmenities} filterModes={filterModes}/>}
+                <div className='map-container' ref={mapContainerRef} />
+                <Data name={name} _amenities={amenities} _modes={modes} />
+            </div>
         </div>
     )
 }
