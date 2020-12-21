@@ -97,7 +97,25 @@ function App() {
                 <h3 className="intro-header">About the site</h3>
                 <p className="intro-text">
                     The sections below correspond to the "story" of a 15-minute city for each interviewee. I write about my conclusions from the interview and analyze the map data in the written section above the map. The maps display amenity locations accessible within a 15-minute walk, bike, or transit ride from the residence of each interviewee. The residence of the interviewee is represented by the pin icon and the colored circles represent the amenity locations. The circles are color-coded corresponding to the data bubbles on the right side of the map. The results can be filtered by mode of transportation or amenity type using the selection boxes to the left of the map. The bubbles to the right of the map display the number of amenities currently displayed, separated by category.
+                    <br /> <br />
+                    Meet the interviewees!
                 </p>
+                <div className="interviewees">
+                    {maps.map(m => (
+                        <div className="interviewee">
+                            <img src={m.avatar} className="intro-avatar"/>
+                            <div className="intro-name">
+                                {m.displayName}
+                            </div>
+                            <div className="intro-neighborhood">
+                                {m.neighborhood}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                <h3 className="intro-header">Stories</h3>
+
                 { maps.map(m => (
                     <div key={m.name} className="person-container">
                         <div className="interview-section">
