@@ -1,5 +1,5 @@
 .app {
-    padding: 5% 8%;
+    padding: 5% 8% 0 8%;
 }
 
 .header {
@@ -129,6 +129,10 @@
     width: 200px;
     border-radius: 100px;
     margin: 0px 20px;
+}
+
+.conclusion-section {
+    margin: 10px 100px 50px 50px;
 }
 
 .footer {
