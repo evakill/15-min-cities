@@ -10,7 +10,7 @@ In this project, I investigate the 15-minute city framework in the context of Ph
 
 ## Application
 
-This a React app to display the results of my research. Data from [this Python script](https://colab.research.google.com/drive/1ufub9jYpZwcSzIp0Hr0R3etS017fRUhS?usp=sharing) is stored in a [static data file](./src/data-csv.js) and rendered on interactive Mapbox maps. Metrics tied to each map are rendered in [data modules](./src/Data.js) and users interact with each map using [filters](./src/Filters.js). A map is rendered for each of my research interviewees accompanied by a text description of the interview.
+This is a React app to display the results of my research. Computed data from [this Python script](https://colab.research.google.com/drive/1ufub9jYpZwcSzIp0Hr0R3etS017fRUhS?usp=sharing) is stored in a [static data file](./src/data-csv.js) (see intermediate data files [here](https://github.com/evakill/urbs-data)) and rendered on interactive Mapbox maps. Metrics tied to each map are rendered in [data modules](./src/Data.js) and users interact with each map using [filters](./src/Filters.js). A map is rendered for each of my research interviewees accompanied by a text description of the interview.
 
 ## Conclusions
 Visit https://fifteen-minute-cities-phl-8e06dcf9bfba.herokuapp.com/ and see for yourself!
